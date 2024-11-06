@@ -6,6 +6,7 @@ import CekKuota from './pages/CekKuota';
 import DestinasiWisata from './pages/DestinasiWisata';
 import PanduanBooking from './pages/PanduanBooking';
 import Penginapan from './pages/Penginapan';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <div>
         <Navbar />
         <Routes>
+          <Route path="/register" element={<Register />} />
+{/*           <Route path="/login" element={<Login />} />
+ */}
           <Route path="/" element={<Beranda />} />
           <Route path="/cek-kuota" element={<CekKuota />} />
           <Route path="/destinasi-wisata" element={<DestinasiWisata />} />
