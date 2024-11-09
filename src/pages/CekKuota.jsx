@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import DestinasiWisata from "./DestinasiWisata";
+import PanduanBooking from "./PanduanBooking";
+import Footer from "../components/Footer";
+
 
 function CekKuota() {
     // Data awal, bisa diganti dengan data dinamis dari API

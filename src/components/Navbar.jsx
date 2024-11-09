@@ -34,26 +34,28 @@ const Navbar = () => {
 
                 {/* Menu Navigasi */}
                 <ul className="flex space-x-6 mx-auto">
-                    <li>
-                        <span onClick={scrollToTop} className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Beranda</span>
-                    </li>
-                    <li>
-                        <span onClick={() => scrollToSection('destinasi')} className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">
-                            Destinasi Wisata
-                        </span>
-                    </li>
-                    <li>
-                        <span onClick={() => scrollToSection('panduan-booking')} className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">
-                            Panduan Booking
-                        </span>
-                    </li>
-                    <li>
-                        <Link to="/cek-kuota" className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Cek Kuota</Link>
-                    </li>
-                    <li>
-                        <Link to="/penginapan" className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Penginapan</Link>
-                    </li>
-                </ul>
+    <li>
+        <Link to="/" onClick={scrollToTop} className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">
+            Beranda
+        </Link>
+    </li>
+    <li>
+        <span onClick={() => scrollToSection('destinasi')} className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">
+            Destinasi Wisata
+        </span>
+    </li>
+    <li>
+        <span onClick={() => scrollToSection('panduan-booking')} className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">
+            Panduan Booking
+        </span>
+    </li>
+    <li>
+        <Link to="/cek-kuota" className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Cek Kuota</Link>
+    </li>
+    <li>
+        <Link to="/penginapan" className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Penginapan</Link>
+    </li>
+</ul>
 
                 {/* Register dan Login */}
                 <div className="flex items-center space-x-4">
