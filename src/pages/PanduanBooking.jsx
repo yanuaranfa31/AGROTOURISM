@@ -2,7 +2,7 @@ import React from 'react';
 
 const PanduanBooking = () => {
     return (
-        <div id="panduan-booking" className="container mx-auto px-4 py-10">
+        <div id="panduan-booking" className="container mx-auto px-4 py-20">
             <h1 className="text-4xl font-bold text-center mb-6">Panduan Booking</h1>
             <p className="text-lg text-center mb-4">
                 Selamat datang di panduan booking kami. Di sini Anda akan menemukan langkah-langkah yang perlu diikuti untuk melakukan booking dengan mudah.

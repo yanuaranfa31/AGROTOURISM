@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../asset/logo.png"
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -28,9 +29,9 @@ const Navbar = () => {
         <header className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${isScrolled ? 'bg-white bg-opacity-80 shadow-lg' : 'bg-transparent'}`}>
             <div className="flex justify-between items-center py-2 px-2 sm:px-4">
                 {/* Logo */}
-                {/* <div className="flex items-center">
+                <div className="flex items-center">
                     <img src={logo} alt="Logo" className="h-10 w-auto" />
-                </div> */}
+                </div>
 
                 {/* Menu Navigasi */}
                 <ul className="flex space-x-6 mx-auto">
@@ -51,7 +52,7 @@ const Navbar = () => {
     </li>
     <li>
         <Link to="/cek-kuota" className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Cek Kuota</Link>
-    </li>
+    </li> 
     <li>
         <Link to="/penginapan" className="p-3 hover:bg-black hover:text-white rounded-md transition-all cursor-pointer">Penginapan</Link>
     </li>

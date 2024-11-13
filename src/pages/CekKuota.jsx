@@ -9,9 +9,9 @@ function CekKuota() {
     // Data awal, bisa diganti dengan data dinamis dari API
     const dataKuota = [
         { tanggal: '2024-11-01', namaWisata: 'Agrowisata Kaligua', jumlahKuota: 50, sisaKuota: 30 },
-        { tanggal: '2024-11-02', namaWisata: 'Gunung Slamet', jumlahKuota: 30, sisaKuota: 10 },
-        { tanggal: '2024-11-03', namaWisata: 'Curug Cimandaway', jumlahKuota: 40, sisaKuota: 25 },
-        { tanggal: '2024-11-04', namaWisata: 'Taman Nasional Gunung Gede', jumlahKuota: 60, sisaKuota: 50 },
+        { tanggal: '2024-11-02', namaWisata: 'Agrowisata Kaligua', jumlahKuota: 30, sisaKuota: 10 },
+        { tanggal: '2024-11-03', namaWisata: 'Agrowisata Kaligua', jumlahKuota: 40, sisaKuota: 25 },
+        { tanggal: '2024-11-04', namaWisata: 'Agrowisata Kaligua', jumlahKuota: 60, sisaKuota: 50 },
     ];
 
     const [selectedMonth, setSelectedMonth] = useState('11'); // State untuk bulan yang dipilih
@@ -22,7 +22,7 @@ function CekKuota() {
     };
 
     return (
-        <div className="p-6">
+        <div className="p-6 pt-20">
             <h2 className="text-2xl font-bold mb-4">Cek Kuota Wisata</h2>
 
             {/* Dropdown untuk memilih bulan */}
